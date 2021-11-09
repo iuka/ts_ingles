@@ -1,0 +1,87 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color">
+    <mdb-navbar-brand>
+        <a class="navbar-brand" href="#">TS / Ingles</a>
+    </mdb-navbar-brand>
+    <links>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link waves-light" href="#" mdbWavesEffect>Primer Grado </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" href="#" mdbWavesEffect>Segundo Grado</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" href="#" mdbWavesEffect>Tercer Grado</a>
+            </li>
+        </ul>
+    </links>
+</mdb-navbar>
+<div class="container mb-5 mt-5">
+    <mdb-tabset #staticTabs1 [buttonClass]="'nav-pills pills-unique white p-3'" [contentClass]="''">
+        <!--Panel 1-->
+        <mdb-tab heading="Introduction">
+            <div class="row ">
+                <div class="col-12 ">
+                    <h4><b>I Introduction</b> </h4>
+                    <h6> Classroom Language - Lenguaje en el salón de clases</h6>
+                    <br>
+                    <table mdbTable>
+                        <thead class="black white-text text-center">
+                            <tr>
+                                <th *ngFor="let head of headElements" scope="col" class=" font-weight-bold ">{{head}} </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr mdbTableCol *ngFor="let el of elements" class="text-center">
+                                <th scope="row">{{el.id}}</th>
+                                <td>
+                                    <mdb-icon fas icon="book-reader" title="Read" size="2x" class="red-text pr-3"></mdb-icon>
+                                    <mdb-icon fas icon="edit" title="Write" size="2x" class="red-text pr-3"></mdb-icon>
+                                    <mdb-icon fas icon="comment-dots" title="Think" size="2x" class="red-text pr-3"></mdb-icon>
+                                    <mdb-icon fab icon="speakap" title="Speak" size="2x" class="red-text pr-3"></mdb-icon>
+                                </td>
+                                <td>
+                                    <audio src="https://telesecundaria.sep.gob.mx/2017/assets/sounds/Introduction_1.mp3" controls></audio>
+                                </td>
+                                <td>
+                                    <a href="https://drive.google.com/file/d/1jSFJDcjborYcaIDiO2NQZ7NjNdlA1bnq/view" target="blank" class="amber-text pr-3">
+                                        <mdb-icon far icon="play-circle" size="3x" class="zoom"></mdb-icon>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </div>
+        </mdb-tab>
+        <!--Panel 2-->
+        <mdb-tab heading="Unit I ">
+            <div class="row ">
+                <div class="col-12 ">
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+                </div>
+            </div>
+        </mdb-tab>
+        <!--Panel 3-->
+        <mdb-tab heading="Unit II ">
+            <div class="row ">
+                <div class="col-12 ">
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+                </div>
+            </div>
+        </mdb-tab>
+        <mdb-tab heading="Unit III ">
+            <div class="row ">
+                <div class="col-12 ">
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+                </div>
+            </div>
+        </mdb-tab>
+    </mdb-tabset>
+</div>
